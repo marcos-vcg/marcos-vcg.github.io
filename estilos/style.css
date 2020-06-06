@@ -46,5 +46,6 @@ a:hover {
 }
 
 footer {
-    text-align: right;
+    text-align: center;
+    background-color: rgb(194, 141, 245);
 }
