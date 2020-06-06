@@ -1,2 +1,2 @@
 # Site Pessoal
- Projeto de um site Pessoal para servir de Portifólio.
+ Site Pessoal para servir de Portifólio.
