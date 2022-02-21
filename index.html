@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portifólio de Marcos Costa">
     <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <main>
-        <header>
-            <h1>Guia de Desenvolvimento WEB</h1>
-            <img src="" alt="">
-        </header>
-        <article>
-            <h2>Guia de Códigos</h2>
-            <img class="lado" src="imagens/pastas.png" alt="Guia Códigos">
-            <p>Este guia traz exemplos de código das principais linguagens de programação e de ferramentas de desenvolvimento, afim de facilitar nosso trabalho e economizar tempo na hora do desenvolvimento, uma vez que apresenta exemplos práticos para poder aproveitar partes de códigos já escritos, apenas os editando de acordo com seu caso específico.</p>
-            <p><a href="guiaDeCodigos.html">Acesse o Guia de Códigos</a></p>
-        </article>
-        <article>
-            <h2>Sobre Mim</h2>
-            <img class="lado" src="imagens/perfil.jpg" alt="Marcos Costa">
-            <p>Meu nome é Marcos Costa e este é o meu cartão de visitas. Desenvolvi este site como forma de treinar colocando em prática uma pequena parcela dos meus conhecimenos para que sirva não apenas de portfólio profissional, mas também, para que possa vir a ajudar qualquer um que busque exemplos de códigos escritos nas principais linguagens de programação. Espero que goste do conteúdo e caso queira entrar em contato comigo deixo algumas formas de contactar.</p>
-           
-        </article>
-        <footer>
-            <a href="https://github.com/marcos-vcg" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/mvcg/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/cyberstorm.cs/" target="_blank">Instagram</a>
-            <a href="imagens/cartao.png" target="_blank">Cartão</a>
-            <a href="imagens/curriculo2.jpg" target="_blank">Currículo</a>
-        </footer>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="perfil.png" alt="">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="">Home</a>
+            <a class="cabecalho-menu-item" href="">About</a>
+            <a class="cabecalho-menu-item" href="guiaDeCodigos.html">Blog</a>
+            <a class="cabecalho-menu-item" href="">Contact</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">I'm Marcos Costa,</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Web Developer</h2>
+                <button class="conteudo-principal-escrito-botao">Me ache!</button>
+            </div>
+            
+            <img class="conteudo-principal-imagem" src="perfil.png" alt="">
+        </section>
+
+
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">Sobre Mim</h3>
+            
+            <p class="conteudo-secundario-paragrafo">Meu nome é <strong>Marcos Costa</strong> e este é o meu cartão de visitas. Desenvolvi este site como forma de treinar colocando em prática uma pequena parcela dos meus conhecimenos para que sirva não apenas de portfólio profissional, mas também, para que possa vir a ajudar qualquer um que busque exemplos de códigos escritos nas principais linguagens de programação. Espero que goste do conteúdo e caso queira entrar em contato comigo deixo algumas formas de contactar.</p>
+        </section>
     </main>
+
+
+    <footer class="rodape">
+        <nav class="rodape-menu">
+            <a class="rodape-menu-item" href="https://github.com/marcos-vcg" target="_blank">GitHub</a>
+            <a class="rodape-menu-item" href="https://www.linkedin.com/in/mvcg/" target="_blank">LinkedIn</a>
+            <a class="rodape-menu-item" href="https://www.instagram.com/cyberstorm.cs/" target="_blank">Instagram</a>
+            <a class="rodape-menu-item" href="imagens/cartao.png" target="_blank">Cartão</a>
+            <a class="rodape-menu-item" href="imagens/curriculo2.jpg" target="_blank">Currículo</a>
+        </nav>
+    </footer>
 </body>
+
 </html>
