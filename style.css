@@ -13,7 +13,7 @@ body {
    font-size: 100%;
    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
    /* min-height: 450px; */
-   margin-bottom:10px;
+   /* padding-bottom:10px; */
 }
 
 /* Fixar Cabeçalho
@@ -30,7 +30,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    flex: 50%;
+    /* flex: 50%; */
     /* justify-content: space-around; */
 }
 
@@ -39,10 +39,12 @@ header {
     flex-direction: row;
     flex-flow: wrap;
     flex-wrap: wrap;
+        align-items: center;
+    text-align: center;
     /* align-items: center;
     text-align: center; */
     //flex: 50%;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 }
 
 .home {
@@ -65,7 +67,7 @@ header {
     align-items: center;
     justify-content: space-around;
     /* justify-content: space-between; */
-    padding: 14px;
+    padding: 12px;
 }
 
 .cabecalho-imagem {
@@ -104,11 +106,11 @@ header {
 
     margin-top: 100px;
     margin-bottom: 200px;
-    margin-left: calc(4%);
-    margin-right: calc(4%);
+    margin-left: calc(5%);
+    margin-right: calc(5%);
     
-    padding-left: calc(25% - 120px);
-    padding-right: calc(25% - 120px);
+    padding-left: calc(20% - 120px);
+    padding-right: calc(20% - 120px);
 
 
 
@@ -160,11 +162,11 @@ header {
 
 .conteudo-principal-escrito-botao {
     background-color: #ECD6C4;
-    width: 160px;
-    height: 50px;
+    /* width: 150px;
+    height: 50px; */
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 10px;
 
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
@@ -173,8 +175,24 @@ header {
     margin: 10px;
 }
 
+.botao-home {
+    /* width: 150px;
+    height: 50px; */
+
+}
+
+.botao-home a {
+    /* margin: 5px; */
+}
+
 .botao-projects {
-    width: 200px;
+    /* width: 180px; */
+white-space: nowrap;
+
+}
+
+.botao-projects a {
+    /* margin: 5px; */
 }
 
 .conteudo-principal-escrito-botao:hover{
@@ -184,6 +202,7 @@ header {
 
 .conteudo-principal-escrito-botao a {
     color: #2F2325;
+    margin: 5px;
 }
 
 .conteudo-principal-imagem {
@@ -239,8 +258,8 @@ header {
     align-items: center;
     border: 2px solid #FFF2E7; 
     border-radius: 20px; 
-    padding: 10px; 
-    margin: 20px;
+    padding: 5px; 
+    margin: 10px;
 }
 
 .conteudo-secundario-skills {
@@ -269,7 +288,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 14px;
+    padding: 12px;
 
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
     width: 100%;
