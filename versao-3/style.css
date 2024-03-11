@@ -59,7 +59,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 0.4px solid #FFF2E7;
+    border-bottom: 0.4px solid black;
+    /* border-bottom: 0.4px solid #FFF2E7; */
     background: white;
     /* background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); */
 
@@ -290,7 +291,8 @@ white-space: nowrap;
 }
 
 .rodape {
-    border-top: 0.4px solid #FFF2E7;
+    border-top: 0.4px solid black;
+    /* border-top: 0.4px solid #FFF2E7; */
 
     display: flex;
     flex-direction: row;
