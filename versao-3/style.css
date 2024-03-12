@@ -167,7 +167,8 @@ header {
 }
 
 .conteudo-principal-escrito-botao {
-    background-color: #ECD6C4;
+    background-color: black;
+    /* background-color: #ECD6C4; */
     /* width: 150px;
     height: 50px; */
     border: none;
@@ -207,7 +208,7 @@ white-space: nowrap;
 }
 
 .conteudo-principal-escrito-botao a {
-    color: #2F2325;
+    color: white;
     margin: 5px;
 }
 
@@ -265,7 +266,7 @@ white-space: nowrap;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #FFF2E7; 
+    border: 2px solid black; 
     border-radius: 20px; 
     padding: 5px; 
     margin: 10px;
