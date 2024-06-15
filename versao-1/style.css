@@ -1,7 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
 
 /* RESET CSS => Aplicado a todos os elementos html */
 * {
@@ -9,27 +6,15 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Shantell Sans", cursive;
     /* overflow-y: clip; */
 }
 
 body {
    font-size: 100%;
-   background: ghostwhite;
-   
-   /* background: aliceblue; */
-   /* background: mintcream; */
-   /* background: whitesmoke; */
-
-   /* //background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); */
+   background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
    /* min-height: 450px; */
    /* padding-bottom:10px; */
 }
-
-/* p, li {
-    padding-right: 10px;
-    margin-right: 10px;
-} */
 
 /* Fixar Cabeçalho
 header {
@@ -45,13 +30,8 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* width: 100%;
-    max-width: 1000px; */
-    /* background-color: aqua; */
-    /* margin: 5px; */
     /* flex: 50%; */
-    justify-content: center;
-    justify-items: center;
+    /* justify-content: space-around; */
 }
 
 .row {
@@ -59,17 +39,12 @@ header {
     flex-direction: row;
     flex-flow: wrap;
     flex-wrap: wrap;
-        /* align-self: left;
-    align-content: left;
-    align-items: left; */
-    /* background-color: blueviolet; */
-    /* width: 100%; */
-    /* margin: 5px; */
-    align-items: center;
+        align-items: center;
     text-align: center;
-     justify-content: space-around;
-    /* flex: 50%; */
-    /* justify-content: left; */
+    /* align-items: center;
+    text-align: center; */
+    //flex: 50%;
+    justify-content: space-around;
 }
 
 .home {
@@ -84,10 +59,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 0.4px solid black;
-    /* border-bottom: 0.4px solid #FFF2E7; */
-    background: white;
-    /* background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); */
+    border-bottom: 0.4px solid #FFF2E7;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 
     display: flex;
     flex-direction: row;
@@ -106,12 +79,10 @@ header {
 }
 
 .cabecalho-destaque-nome {
-    /* font-family: 'Righteous', cursive; */
-    font-weight: 700;
-    font-size: large;
-    font-variant: small-caps;
-    /* color: #FFF2E7; */
-    color: black;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFF2E7;
 }
 
 .cabecalho-menu {
@@ -121,15 +92,14 @@ header {
 }
 
 .cabecalho-menu-item {
-    /* font-family: 'Sarala', sans-serif; */
-    /* color: #FFF2E7; */
-    color: black;
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
     font-weight: 400;
     font-size: 16px;
 }
 
 .cabecalho-menu-item:hover{
-    color: rgba(90, 83, 78, 0.53);
+    color: rgba(236, 214, 196, 0.53);
 }
 
 .conteudo {
@@ -142,13 +112,13 @@ header {
     padding-left: calc(20% - 120px);
     padding-right: calc(20% - 120px);
 
-    /* background: black; */
+
 
     /* padding-left:calc(25% - 80px); */
 
     /* justify-content: center; */
     /* min-height: 400px; */
-    /* columns: 150px auto; */
+    //columns: 150px auto;
     
     /* display: flex;
     flex-direction: row; */
@@ -160,7 +130,7 @@ header {
 
 
 .conteudo-principal {
-    /* whrap:  */
+    //whrap: 
     /* display: flex;
     flex-direction: column; */
     /* align-items: center; */
@@ -175,33 +145,30 @@ header {
 }
 
 .conteudo-principal-escrito-titulo {
-    /* font-family: 'Righteous', cursive; */
+    font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 48px;
-    color: black;
-    /* color: #FFF2E7; */
+    color: #FFF2E7;
     /* margin-left: calc(10%); */
 }
 
 .conteudo-principal-escrito-subtitulo {
-    /* font-family: 'Sarala', sans-serif; */
+    font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: black;
-    /* color: #FFF2E7; */
+    color: #FFF2E7;
     /* margin: 10px; */
 }
 
 .conteudo-principal-escrito-botao {
-    background-color: black;
-    /* background-color: #ECD6C4; */
+    background-color: #ECD6C4;
     /* width: 150px;
     height: 50px; */
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 
-    /* font-family: 'Sarala', sans-serif; */
+    font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: #2F2325;
@@ -229,12 +196,12 @@ white-space: nowrap;
 }
 
 .conteudo-principal-escrito-botao:hover{
-    background-color: rgba(90, 83, 78, 0.53);
+    background-color: rgba(236, 214, 196, 0.53);
     cursor: pointer;
 }
 
 .conteudo-principal-escrito-botao a {
-    color: white;
+    color: #2F2325;
     margin: 5px;
 }
 
@@ -243,8 +210,7 @@ white-space: nowrap;
     align: center;
     justify: center;
     display: flex;
-    padding:20px;
-    /* width: 100%; */
+    //width: 100%;
     /* display: flex;
     flex-direction: row; */
     /* max-width: 250px; */
@@ -252,9 +218,7 @@ white-space: nowrap;
 }
 
 .conteudo-principal-imagem-img {
-    min-width: 100px;
-    max-width: 200px;
-    border-radius: 50%; 
+    min-weight: 100px;
     /* width: 150px; */
 }
 
@@ -267,26 +231,23 @@ white-space: nowrap;
 }
 
 .conteudo-secundario-titulo {
-    /* border-bottom: 0.4px solid #FFF2E7; */
-    border-bottom: 0.4px solid black;
+    border-bottom: 0.4px solid #FFF2E7;
     padding-bottom: 16px;
 
-    /* font-family: 'Righteous', cursive; */
+    font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: x-large;
-    font-variant: small-caps;
-    /* color: #FFF2EF; */
+    font-size: 24px;
+    color: #FFF2EF;
     margin-bottom: 16px;
-    /* text-align: left; */
 }
 
 .conteudo-secundario-paragrafo {
-    /* font-family: 'Sarala', sans-serif; */
+    font-family: 'Sarala', sans-serif;
     font-weight: 300;
-    font-size: medium;
-    /* color: black; */
+    font-size: 18px;
+    color: #ECD6C4;
     
-    /* width:calc(100% - 50px); */
+    //width:calc(100% - 50px);
     /* width:calc(75% + 75px); */
     text-align: justify;
 }
@@ -295,45 +256,16 @@ white-space: nowrap;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black; 
-    border-radius: 15px; 
+    border: 2px solid #FFF2E7; 
+    border-radius: 20px; 
     padding: 5px; 
-    margin: 5px;
-    width: 230px;
-    /* gap: 20px; */
+    margin: 10px;
 }
-
 
 .conteudo-secundario-skills {
-    /* font-size: x-large;
-    font-weight: 400; */
-    font-variant: small-caps;
-
-    border: 0.4px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px;
-}
-
-
-.conteudo-secundario-skills-titulo {
-    font-size: x-large;
-    font-weight: 500;
-    font-variant: small-caps;
-
-    border-bottom: 0.4px solid black;
-}
-
-.conteudo-secundario-skills-list {
+    display: flex;
     flex-direction: column;
-    align-items: start;
-    padding-left: 5px;
-    margin-right: 10px;
-    padding-top: 10px;
-
-    font-size: medium;
-
-    justify-content: left;
+    align-items: center;
     /* border: 2px solid #FFF2E7; 
     border-radius: 20px; 
     padding: 0px; 
@@ -350,8 +282,7 @@ white-space: nowrap;
 }
 
 .rodape {
-    border-top: 0.4px solid black;
-    /* border-top: 0.4px solid #FFF2E7; */
+    border-top: 0.4px solid #FFF2E7;
 
     display: flex;
     flex-direction: row;
@@ -359,8 +290,7 @@ white-space: nowrap;
     justify-content: space-around;
     padding: 12px;
 
-    /* background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); */
-    background: white;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
     width: 100%;
     position: fixed;
     bottom: 0px;
@@ -372,13 +302,12 @@ white-space: nowrap;
 }
 
 .rodape-menu-item {
-    /* font-family: 'Sarala', sans-serif; */
-    color: black;
-    /* color: #FFF2E7; */
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
     font-weight: 400;
     font-size: 16px;
 }
 
 .rodape-menu-item:hover{
-    color: rgba(90, 83, 78, 0.53);
+    color: rgba(236, 214, 196, 0.53);
 }

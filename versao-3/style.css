@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 
 /* RESET CSS => Aplicado a todos os elementos html */
 * {
@@ -6,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Shantell Sans", cursive;
     /* overflow-y: clip; */
 }
 
@@ -17,7 +21,7 @@ body {
    /* background: mintcream; */
    /* background: whitesmoke; */
 
-   //background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+   /* //background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); */
    /* min-height: 450px; */
    /* padding-bottom:10px; */
 }
@@ -49,7 +53,7 @@ header {
     text-align: center;
     /* align-items: center;
     text-align: center; */
-    //flex: 50%;
+    /* //flex: 50%; */
     justify-content: space-around;
 }
 
