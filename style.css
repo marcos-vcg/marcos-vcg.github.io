@@ -15,7 +15,9 @@
 
 body {
    font-size: 100%;
-   background: ghostwhite;
+   /* background: ghostwhite; */
+   background: rgba(71, 71, 218, 0.16);
+   overflow-x: hidden;
    
    /* background: aliceblue; */
    /* background: mintcream; */
@@ -26,7 +28,9 @@ body {
    /* padding-bottom:10px; */
 }
 
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth; 
+}
 
 /* p, li {
     padding-right: 10px;
@@ -75,12 +79,37 @@ header {
 }
 
 .home {
-    align-items: center;
+    /* align-items: center;
     text-align: center;
-    overflow-y: hidden;
+    overflow-y: hidden; */
+    background-color: rgb(36, 36, 120); 
+    color: aliceblue;
+    padding-top: 110px !important;;
+    width: 100%;
+    padding-inline: calc(30% - 180px);
+    /* justify-self: space-between !important; */
+    /* padding-block: 50px;  */
+    /* margin-bottom: 50px; */
 }
 
+.about {
+    /* background-color: rgb(36, 36, 120); 
+    color: aliceblue; */
+    padding-inline: calc(25% - 80px);
+    /* padding-left: calc(25% - 100px);
+    padding-right: calc(25% - 100px); */
+}
 
+.skills {
+    background-color: rgb(36, 36, 120); 
+    color: aliceblue;
+}
+
+.projects {
+  width: 100%;
+    /* background-color: rgb(36, 36, 120); 
+    color: aliceblue; */
+}
 
 .cabecalho {
     position: fixed;
@@ -88,7 +117,8 @@ header {
     width: 100%;
     border-bottom: 0.4px solid black;
     /* border-bottom: 0.4px solid #FFF2E7; */
-    background: white;
+    /* background: white; */
+    background: ghostwhite;
     /* background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); */
 
     display: flex;
@@ -96,7 +126,8 @@ header {
     align-items: center;
     justify-content: space-around;
     /* justify-content: space-between; */
-    padding: 12px;
+    padding-right: 8%;
+    padding-block: 12px;
 }
 
 .cabecalho-imagem {
@@ -120,7 +151,8 @@ header {
         /* max-width: 200px; */
     display: flex;
     /* padding-inline: 10px; */
-    gap: 16px;
+    /* gap: 8px; */
+    gap: 6%;
 }
 
 .cabecalho-menu-item {
@@ -128,7 +160,7 @@ header {
     /* color: #FFF2E7; */
     color: black;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .cabecalho-menu-item:hover{
@@ -137,13 +169,13 @@ header {
 
 .conteudo {
     margin-top: 0px;
-    padding-top: 70px;
-    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-bottom: 80px;
     /* margin-left: calc(5%); */
     /* margin-right: calc(5%); */
-    
+/*     
     padding-left: calc(25% - 100px);
-    padding-right: calc(25% - 100px);
+    padding-right: calc(25% - 100px); */
 
     /* background: black; */
 
@@ -168,6 +200,7 @@ header {
     flex-direction: column; */
     /* align-items: center; */
     /* justify-content: space-around; */
+    /* background: white; */
 }
 
 .conteudo-principal-escrito {
@@ -294,17 +327,150 @@ white-space: nowrap;
     text-align: justify;
 }
 
-.conteudo-secundario-projects {
+.projects-list {
+  display: flex;
+  
+  flex-direction: row;
+  gap: 25px;
+  /* overflow: auto; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  /* width: calc(10% + 250px); */
+  /* max-width: 800px; */
+  width: 100%;
+  /* max-width: 1200px;
+  min-width: 200px; */
+  padding-inline: 25px;
+  /* padding-right: 25px; */
+  /* calc(30% - 180px) */
+  /* min-inline-size: 20%;
+  max-inline-size: 20%; */
+}
+
+.projects-list a {
+  color: currentColor;  // remove os efeitos de link visitado...
+  /* text-decoration: none; */
+  transition: transform 0.3s ease-in-out; /* Animation */
+}
+
+.projects-list a:hover{
+    /* color: rgba(90, 83, 78, 0.53); */
+    color: cadetblue;
+    
+    /* zoom: 102%; */
+
+    transform: scale(1.05);
+ 
+
+    box-shadow: 10 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: .5s;
+    /* -ms-zoom-animation: 1; */
+    /* transform: scale(0.9); */
+}
+
+
+.project-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: space-between;
     border: 2px solid ; 
-    border-radius: 15px; 
+    /* border-bottom: 0.4px solid ; */
+    border-radius: 10px; 
     padding: 5px; 
-    margin: 5px;
-    width: 240px;
+    margin-block: 10px;
+    
+    /* margin: 5px; */
+    width: 260px;
+    height: 380px;
     /* gap: 20px; */
 }
+
+.project-card-image {
+  background-color: blueviolet;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+.project-card-description {
+  border-top: 0.4px solid ;
+
+  /* flex-direction: column; */
+  /* align-items: start; */
+  padding: 5px;
+  
+
+  /* font-size: medium; */
+
+  justify-content: left;
+  /* justify-items: left; */
+  /* position: fixed; */
+
+}
+
+.project-card-title {
+  font-size: medium;
+  font-weight: 800;
+  font-variant: small-caps;
+}
+
+.project-card-subtitle {
+  /* font-size: x-small;
+  font-weight: 500; */
+  font-size: small;
+  align-items: end;
+  /* justify-content: left; */
+  /* flex-direction: row; */
+  text-align: justify;
+}
+
+.project-card-tags {
+  padding-top: 10px;
+}
+
+.tag {
+  color: aliceblue;
+  /* background-color: rgb(110, 201, 19); */
+  /* background-color: black; */
+  border-radius: 5px;
+  /* border: 0.4px solid ; */
+  font-size: x-small;
+  font-weight: 500;
+
+  font-variant: small-caps;
+  padding-inline: 5px;
+}
+
+.tag-stack {
+  background-color: black;
+}
+
+.tag-language {
+  background-color: rgb(110, 201, 19);
+}
+
+.tag-react {
+  background-color: rgb(110, 201, 19);
+}
+
+.tag-javascript {
+  background-color: rgb(110, 201, 19);
+}
+
+.tag-java {
+  background-color: rgb(110, 201, 19);
+}
+
+.tag-spring {
+  background-color: rgb(110, 201, 19);
+}
+
+.tag-mysql {
+  background-color: rgb(110, 201, 19);
+}
+
+
 
 
 .conteudo-secundario-skills {
@@ -312,7 +478,8 @@ white-space: nowrap;
     font-weight: 400; */
     font-variant: small-caps;
 
-    border: 0.4px solid black;
+    /* border: 0.4px solid black; */
+    border: 0.4px solid ;
     border-radius: 5px;
     padding: 10px;
     margin: 20px;
@@ -324,7 +491,8 @@ white-space: nowrap;
     font-weight: 500;
     font-variant: small-caps;
 
-    border-bottom: 0.4px solid black;
+    /* border-bottom: 0.4px solid black; */
+    border-bottom: 0.4px solid ;
 }
 
 .conteudo-secundario-skills-list {
@@ -363,7 +531,8 @@ white-space: nowrap;
     padding: 12px;
 
     /* background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); */
-    background: white;
+    /* background: white; */
+    background-color: ghostwhite;
     width: 100%;
     position: fixed;
     bottom: 0px;
