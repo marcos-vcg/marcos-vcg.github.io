@@ -95,19 +95,21 @@ header {
 .about {
     /* background-color: rgb(36, 36, 120); 
     color: aliceblue; */
-    /* padding-inline: calc(25% - 80px); */
-  padding-inline: 20px;
-  max-width: 800px;
+    padding-inline: calc(25% - 80px);
     /* padding-left: calc(25% - 100px);
     padding-right: calc(25% - 100px); */
 }
 
+.skills {
+    background-color: rgb(36, 36, 120); 
+    color: aliceblue;
+}
 
-
-
-
-
-
+.projects {
+  width: 100%;
+    /* background-color: rgb(36, 36, 120); 
+    color: aliceblue; */
+}
 
 .cabecalho {
     position: fixed;
@@ -325,143 +327,6 @@ white-space: nowrap;
     text-align: justify;
 }
 
-
-
-
-
-
-/* SKILLS SESSION */
-
-.skills {
-    background-color: rgb(36, 36, 120); 
-    color: aliceblue;
-    width: 100%;
-}
-
-
-.skills-list {
-  flex: content;
-  flex-direction: column;
-  /* padding-inline: calc(25% - 80px); */
-  padding-inline: 20px;
-  max-width: 400px;
-  gap: 10px;
-  /* gap: 10px; */
-}
-
-/* .skills-list button {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-} */
-
-/* .skills-list button:hover {
-
-} */
-
-.skills-card {
-  /* background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s; */
-  transition: 1.4s ease-out;
-  width: 100%;
-}
-
-.skills-card-active, .skills-card:hover {
-  background-color: #ccc;
-}
-
-
-.skills-card-title {
-  /* font-size: medium;
-  font-weight: 800;
-  font-variant: small-caps;
-  color: aliceblue; */
-  
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 5px;
-  width: 100%;
-  text-align: justify;
-  /* border: none;
-  outline: none; */
-  /* transition: .1s ease-in-out; */
-  justify-content: space-between !important;
-}
-
-.skills-card-body {
-  padding: 0 18px;
-  background-color: white;
-  color: rgb(36,36,120);
-  /* display: none; */
-  height: auto;
-  max-height: 0;
-  overflow: hidden;
-
-  transition: max-height .6s ease-in-out;
-  /* transition: transform 0.3s ease-in-out; */
-  /* transition: height 1.5s;
-  transition-timing-function: linear; */
-  /* transition: height 1.4s ease-in-out; */
-  text-align: left;
-}
-
-.accordion-active .skills-card-body{
-  /* display: block; */
-  
-  /* transition: height 1.4s ease-in-out; */
-  /* transform:  scale(1.05); */
-  max-height: 130px;
-  
-}
-
-.accordion-active .skills-card-title p::after {
-  content: '-';
-}
-
-/* Adds a horizontal line between the contents */
-
-.skills-card-body{
-  width: 100%;
-  margin-left: 0;
-  border: 1px solid grey;
-}
-
-.skills-card-title p::after {
-  content: '+';
-  color: black;
-  /* position: absolute; */
-  /* top: 50%; */
-  /* right: 500px; */
-  font-size: 20px;
-  /* transform: translateY(-50%); */
-}
-
-
-
-
-
-/* PROJECTS SESSION */
-
-.projects {
-  width: 100%;
-    /* background-color: rgb(36, 36, 120); 
-    color: aliceblue; */
-}
-
 .projects-list {
   display: flex;
   
@@ -489,7 +354,7 @@ white-space: nowrap;
   transition: transform 0.3s ease-in-out; /* Animation */
 }
 
-.projects-list a:hover {
+.projects-list a:hover{
     /* color: rgba(90, 83, 78, 0.53); */
     color: cadetblue;
     
@@ -499,7 +364,7 @@ white-space: nowrap;
  
 
     box-shadow: 10 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    transition: 0.5s;
+    transition: .5s;
     /* -ms-zoom-animation: 1; */
     /* transform: scale(0.9); */
 }
