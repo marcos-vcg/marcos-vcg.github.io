@@ -92,15 +92,6 @@ header {
     /* margin-bottom: 50px; */
 }
 
-.about {
-    /* background-color: rgb(36, 36, 120); 
-    color: aliceblue; */
-    /* padding-inline: calc(25% - 80px); */
-  padding-inline: 20px;
-  max-width: 800px;
-    /* padding-left: calc(25% - 100px);
-    padding-right: calc(25% - 100px); */
-}
 
 
 
@@ -300,21 +291,39 @@ white-space: nowrap;
     margin-top: 48px;
 }
 
-.conteudo-secundario-titulo {
-    /* border-bottom: 0.4px solid #FFF2E7; */
-    border-bottom: 0.4px solid black;
-    padding-bottom: 16px;
+/* .conteudo-secundario-titulo {
+  border-bottom: 0.4px solid black;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: x-large;
+  font-variant: small-caps;
+  margin-bottom: 16px;
+} */
 
-    /* font-family: 'Righteous', cursive; */
-    font-weight: 400;
-    font-size: x-large;
-    font-variant: small-caps;
-    /* color: #FFF2EF; */
-    margin-bottom: 16px;
-    /* text-align: left; */
+
+
+/* ABOUT SEION */
+
+.about {
+    /* background-color: rgb(36, 36, 120); 
+    color: aliceblue; */
+    /* padding-inline: calc(25% - 80px); */
+    width: 100%;
+  /* padding-inline: 20px;
+  max-width: 800px; */
+    /* padding-left: calc(25% - 100px);
+    padding-right: calc(25% - 100px); */
 }
 
-.conteudo-secundario-paragrafo {
+
+
+.about-script {
+  padding-inline: 20px;
+  max-width: 800px;
+}
+
+
+.about-paragraph {
     /* font-family: 'Sarala', sans-serif; */
     font-weight: 300;
     font-size: medium;
