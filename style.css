@@ -115,8 +115,9 @@ header {
     align-items: center;
     justify-content: space-around;
     /* justify-content: space-between; */
-    padding-right: 8%;
+    padding-right: 6%;
     padding-block: 12px;
+    /* width: 100%; */
 }
 
 .cabecalho-imagem {
@@ -302,6 +303,9 @@ white-space: nowrap;
 
 
 
+
+
+
 /* ABOUT SEION */
 
 .about {
@@ -314,7 +318,6 @@ white-space: nowrap;
     /* padding-left: calc(25% - 100px);
     padding-right: calc(25% - 100px); */
 }
-
 
 
 .about-script {
@@ -345,6 +348,7 @@ white-space: nowrap;
     background-color: rgb(36, 36, 120); 
     color: aliceblue;
     width: 100%;
+    min-height: 650px;
 }
 
 
@@ -352,8 +356,8 @@ white-space: nowrap;
   flex: content;
   flex-direction: column;
   /* padding-inline: calc(25% - 80px); */
-  padding-inline: 20px;
-  max-width: 400px;
+  padding-inline: 50px;
+  max-width: 500px;
   gap: 10px;
   /* gap: 10px; */
 }
@@ -394,15 +398,14 @@ white-space: nowrap;
 
 
 .skills-card-title {
-  /* font-size: medium;
-  font-weight: 800;
+  font-size: x-medium;
+  font-weight: 600;
   font-variant: small-caps;
-  color: aliceblue; */
   
   background-color: #eee;
-  color: #444;
+  color: rgb(36, 36, 120); ;
   cursor: pointer;
-  padding: 5px;
+  padding-inline: 10px;
   width: 100%;
   text-align: justify;
   /* border: none;
@@ -411,8 +414,24 @@ white-space: nowrap;
   justify-content: space-between !important;
 }
 
+.skills-card-title p::after {
+  content: '+';
+  color: rgb(36, 36, 120); 
+  /* position: absolute; */
+  /* top: 50%; */
+  /* right: 500px; */
+  font-size: 20px;
+  /* transform: translateY(-50%); */
+}
+
 .skills-card-body {
-  padding: 0 18px;
+  font-size: small;
+  font-weight: 500;
+  /* font-variant: small-caps; */
+
+  /* padding-block: 5px; */
+  
+  padding-inline: 10px;
   background-color: white;
   color: rgb(36,36,120);
   /* display: none; */
@@ -426,6 +445,16 @@ white-space: nowrap;
   transition-timing-function: linear; */
   /* transition: height 1.4s ease-in-out; */
   text-align: left;
+  border: 1px solid grey;
+    /* width: 100%; */
+  /* margin-left: 0; */
+}
+
+.skills-card-body p:first-child,li:first-child {
+  margin-top: 5px;
+}
+.skills-card-body p:last-child, li:last-child {
+  margin-bottom: 5px;
 }
 
 .accordion-active .skills-card-body{
@@ -439,24 +468,6 @@ white-space: nowrap;
 
 .accordion-active .skills-card-title p::after {
   content: '-';
-}
-
-/* Adds a horizontal line between the contents */
-
-.skills-card-body{
-  width: 100%;
-  margin-left: 0;
-  border: 1px solid grey;
-}
-
-.skills-card-title p::after {
-  content: '+';
-  color: black;
-  /* position: absolute; */
-  /* top: 50%; */
-  /* right: 500px; */
-  font-size: 20px;
-  /* transform: translateY(-50%); */
 }
 
 
@@ -680,7 +691,7 @@ white-space: nowrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 12px;
+    padding-block: 12px;
 
     /* background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); */
     /* background: white; */
@@ -700,7 +711,7 @@ white-space: nowrap;
     color: black;
     /* color: #FFF2E7; */
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .rodape-menu-item:hover{

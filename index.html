@@ -11,7 +11,7 @@
 
 <body>
   <!-- <iframe src="header.html" width="100%" height="60" style="border:none; position: fixed; top: 0px;"></iframe> -->
-  <header class="cabecalho">
+  <header class="col cabecalho">
     <div class="cabecalho-destaque">
       <span class="cabecalho-destaque-nome">Marcos Costa</span>
     </div>
@@ -26,6 +26,7 @@
   </header>
 
   <main class="col">
+
 
 
     <!-- HOME -->
@@ -103,8 +104,12 @@
     </section>
 
 
+
+
+
     <!-- SKILLS -->
     <section class="conteudo skills" id="skills">
+
       <div class="row conteudo-principal">
         <div class="col conteudo-principal-escrito">
           <div class="row conteudo-principal-escrito-titulo">My Skills</div>
@@ -114,50 +119,44 @@
 
 
       <div class="row conteudo-secundario">
-
-
         <div class="col skills-list">
-          <!-- <button> -->
-          <!-- <div class="skills-card accordion-active"> -->
-          <div class="skills-card">
+
+          <!-- FRONTEND -->
+          <div class="skills-card accordion-active">
 
             <!-- <div class="skills-card-title"
               onclick="nextElementSibling.style.display = nextElementSibling.style.display == 'none' ? 'block' : 'none' ">
               <p>Front-End</p>
             </div> -->
-            <!-- <div class="row skills-card-title" onclick="parentElement.classList.toggle('accordion-active'); console.log('clis') "> -->
+
             <div class="row skills-card-title"
               onclick="[...document.getElementsByClassName('skills-card')].map(el => el.classList.remove('accordion-active')) ;parentElement.classList.toggle('accordion-active') ">
               <span>Front-End</span>
               <p></p>
             </div>
-            <!-- <hr> -->
+
             <div class="skills-card-body">
-              <p>- HTML</p>
-              <p>- CSS / TailwindCSS</p>
-              <p>- JavaScript / TypeScript</p>
-              <p>- React / Redux</p>
-              <p>- Thymeleaf</p>
-              <p>- JQuery / Bootstrap</p>
+              <li>HTML</li>
+              <li>CSS / TailwindCSS</li>
+              <li>JavaScript / TypeScript</li>
+              <li>React / Redux</li>
+              <li>Thymeleaf</li>
+              <li>JQuery / Bootstrap</li>
             </div>
 
           </div>
-          <!-- </button> -->
 
-          <!-- <button> -->
+
+          <!-- BACKEND -->
           <div class="skills-card">
 
-            <!-- <div class="skills-card-title"
-                              onclick="nextElementSibling.style.display = nextElementSibling.style.display == 'none' ? 'block' : 'none' ">
-                              <p>Front-End</p>
-                            </div> -->
             <div class="row skills-card-title"
               onclick="[...document.getElementsByClassName('skills-card')].map(el => el.classList.remove('accordion-active')) ;parentElement.classList.toggle('accordion-active') ">
               <span>Back-End</span>
               <p></p>
             </div>
-            <!-- <hr> -->
-            <div class="skills-card-body accordeon">
+
+            <div class="skills-card-body">
               <li>Java</li>
               <li>Spring</li>
               <li>JPA / Hibernate</li>
@@ -166,7 +165,6 @@
             </div>
 
           </div>
-          <!-- </button> -->
 
 
           <!-- MOBILE -->
@@ -174,11 +172,11 @@
 
             <div class="row skills-card-title"
               onclick="[...document.getElementsByClassName('skills-card')].map(el => el.classList.remove('accordion-active')) ;parentElement.classList.toggle('accordion-active') ">
-              <span>MOBILE</span>
+              <span>Mobile</span>
               <p></p>
             </div>
 
-            <div class="skills-card-body accordeon">
+            <div class="skills-card-body">
               <li>React Native</li>
               <li>Flutter / Dart</li>
             </div>
@@ -186,17 +184,16 @@
           </div>
 
 
-
           <!-- TESTS -->
           <div class="skills-card">
 
             <div class="row skills-card-title"
               onclick="[...document.getElementsByClassName('skills-card')].map(el => el.classList.remove('accordion-active')) ;parentElement.classList.toggle('accordion-active') ">
-              <span>TESTS</span>
+              <span>Tests</span>
               <p></p>
             </div>
 
-            <div class="skills-card-body accordeon">
+            <div class="skills-card-body">
               <li>Jest</li>
               <li>React Test Lib</li>
               <li>JUnit</li>
@@ -204,7 +201,6 @@
             </div>
 
           </div>
-
 
 
           <!-- DATABASES -->
@@ -216,7 +212,7 @@
               <p></p>
             </div>
 
-            <div class="skills-card-body accordeon">
+            <div class="skills-card-body">
               <li>MySQL</li>
               <li>PostgreeSQL</li>
               <li>MongoDB</li>
@@ -230,11 +226,11 @@
 
             <div class="row skills-card-title"
               onclick="[...document.getElementsByClassName('skills-card')].map(el => el.classList.remove('accordion-active')) ;parentElement.classList.toggle('accordion-active') ">
-              <span>DEVOPS</span>
+              <span>DevOps</span>
               <p></p>
             </div>
 
-            <div class="skills-card-body accordeon">
+            <div class="skills-card-body">
               <li>AWS - SQS / SNS</li>
               <li>Docker</li>
               <li>Kubernets</li>
@@ -244,112 +240,12 @@
 
           </div>
 
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class=""> -->
-        <!-- 
-        <div class="conteudo-secundario-skills">
-          <div class="row conteudo-secundario-skills-titulo">
-            <p>Front-End</p>
-          </div>
-          <div class="row conteudo-secundario-skills-list">
-            <p>- HTML</p>
-            <p>- CSS</p>
-            <p>- JavaScript</p>
-            <p>- TypeScript</p>
-            <p>- TailwindCSS</p>
-            <p>- React / Redux</p>
-            <p>- Thymeleaf</p>
-            <p>- JSF / PrimeFaces</p>
-            <p>- JQuery</p>
-          </div>
-        </div>
-
-        <div class="conteudo-secundario-skills">
-          <div class="row conteudo-secundario-skills-titulo">
-            <p>Back-End</p>
-          </div>
-          <div class="row conteudo-secundario-skills-list">
-            <li>Java</li>
-            <li>Spring</li>
-            <li>JPA / Hibernate</li>
-            <li>JSP / Servlets</li>
-          </div>
-        </div>
-
-        <div class="conteudo-secundario-skills">
-          <div class="row conteudo-secundario-skills-titulo">
-            <p>Mobile</p>
-          </div>
-          <div class="row conteudo-secundario-skills-list">
-            <li>React Native</li>
-            <li>Flutter / Dart</li>
-          </div>
-        </div>
-
-        <div class="conteudo-secundario-skills">
-          <div class="row conteudo-secundario-skills-titulo">
-            <p>Tests</p>
-          </div>
-          <div class="row conteudo-secundario-skills-list">
-            <li>Jest</li>
-            <li>React Test Lib</li>
-            <li>JUnit</li>
-            <li>Mockito</li>
-          </div>
-        </div>
-
-        <div class="conteudo-secundario-skills">
-          <div class="row conteudo-secundario-skills-titulo">
-            <p>DataBase</p>
-          </div>
-          <div class="row conteudo-secundario-skills-list">
-            <li>MySQL</li>
-            <li>PostgreeSQL</li>
-            <li>MongoDB</li>
-          </div>
-        </div>
-
-        <div class="conteudo-secundario-skills">
-          <div class="row conteudo-secundario-skills-titulo">
-            <p>DevOps</p>
-          </div>
-          <div class="row conteudo-secundario-skills-list">
-            <li>AWS - SQS / SNS</li>
-            <li>Docker</li>
-            <li>Kubernets</li>
-            <li>Terraform</li>
-            <li>Microservices</li>
-          </div>
-        </div> -->
-
-        <!-- <div class="conteudo-secundario-skills">
-          <div class="row conteudo-secundario-skills-titulo">
-            <p>Op. Systems</p>
-          </div>
-          <div class="row conteudo-secundario-skills-list">
-            <li>Windows</li>
-            <li>Linux</li>
-            <li>MacOS</li>
-          </div>
-        </div> -->
-
-        <!-- </div> -->
       </div>
+
     </section>
+
+
 
 
     <!-- PROJECTS -->
@@ -533,6 +429,8 @@
     </section>
 
   </main>
+
+
 
 
   <footer class="rodape">
